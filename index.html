@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- TODO: replace "Saffron & Sage" and the description with your own -->
+  <title>Saffron &amp; Sage · Freshly cooked, order online</title>
+  <meta name="description" content="Home-style Indian food, freshly cooked to order in a certified kitchen. Order online for pickup, or on Swiggy and Zomato.">
+  <meta name="theme-color" content="#1d3b2a">
+  <meta property="og:title" content="Saffron & Sage · Freshly cooked, order online">
+  <meta property="og:description" content="Freshly cooked to order. Pick up or get it delivered via Swiggy.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#menu">Skip to menu</a>
+
+  <!-- ───────── Header ───────── -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a href="#top" class="brand" aria-label="Home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="currentColor"/><path d="M9 18c0 4 3.1 6.5 7 6.5s7-2.5 7-6.5H9z" fill="#f6efe2"/><path d="M13 9c1.5 1.5-1.5 3 0 5M16.5 8c1.5 1.5-1.5 3 0 5M20 9c1.5 1.5-1.5 3 0 5" stroke="#e39b2d" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
+        </span>
+        <span class="brand__name">Saffron <em>&amp;</em> Sage</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#menu">Menu</a>
+        <a href="#how">How it works</a>
+        <a href="#promise">Our kitchen</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Visit</a>
+      </nav>
+      <div class="header__actions">
+        <span class="status" data-status hidden></span>
+        <button class="btn btn--primary btn--sm basket-btn" data-open-basket aria-label="Open your order">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.3 10.4a2 2 0 0 1-2 1.6H8.3a2 2 0 0 1-2-1.6L5 8z M9 8V6a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          <span class="basket-btn__label">Your order</span>
+          <span class="badge" data-count>0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ───────── Hero ───────── -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow">Cloud kitchen · Cooked fresh to order</p>
+          <h1>Home-style food,<br><span class="accent">made the slow way.</span></h1>
+          <p class="lede">Every dish is cooked only after you order, in our certified kitchen, with fresh ingredients bought every morning. Pick it up hot or have it delivered.</p>
+          <div class="hero__cta">
+            <a href="#menu" class="btn btn--primary btn--lg">Order for pickup</a>
+            <a href="#" class="btn btn--ghost btn--lg" data-link="swiggyUrl" target="_blank" rel="noopener">
+              Order on Swiggy
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+          <ul class="hero__proof">
+            <!-- TODO: replace with your real rating & numbers -->
+            <li><strong>4.8 <span class="star" aria-hidden="true">★</span></strong><span>on Swiggy</span></li>
+            <li><strong>10,000+</strong><span>meals served</span></li>
+            <li><strong>FSSAI</strong><span>licensed kitchen</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__art" aria-hidden="true">
+          <div class="plate">
+            <div class="plate__food">
+              <span class="grain g1"></span><span class="grain g2"></span><span class="grain g3"></span>
+              <span class="leaf l1"></span><span class="leaf l2"></span><span class="leaf l3"></span>
+            </div>
+          </div>
+          <div class="float-card float-card--a">
+            <span class="dot dot--ok"></span>
+            <div><strong>Cooked fresh</strong><small>Starts when you order</small></div>
+          </div>
+          <div class="float-card float-card--b">
+            <span class="float-card__icon">🛵</span>
+            <div><strong>Pickup or Swiggy</strong><small>Your choice</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────── Trust strip ───────── -->
+    <section class="strip" aria-label="Why customers trust us">
+      <div class="container strip__inner">
+        <div class="strip__item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3z M8.5 12l2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>FSSAI licensed</div>
+        <div class="strip__item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21c-4-3-7-6.5-7-10.5A7 7 0 0 1 12 3.5a7 7 0 0 1 7 7C19 14.5 16 18 12 21z M12 8v5M9.5 10.5h5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>Fresh ingredients daily</div>
+        <div class="strip__item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8z M3 4h18v4H3z M10 12h4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/></svg>Tamper-sealed packaging</div>
+        <div class="strip__item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c2 3 5 5 5 9a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5 0 2 1 3 2 3 0-3-1-5 1-7.5z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>No added colours</div>
+      </div>
+    </section>
+
+    <!-- ───────── Menu ───────── -->
+    <section class="section menu" id="menu">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">The menu</p>
+          <h2>Pick your favourites</h2>
+          <p class="section__sub">Add dishes to your order, then send it to us on WhatsApp for pickup. Prefer delivery? Find the same menu on Swiggy.</p>
+        </div>
+
+        <div class="menu__controls">
+          <div class="tabs" role="tablist" aria-label="Menu categories" data-tabs></div>
+          <label class="toggle">
+            <input type="checkbox" data-veg-only>
+            <span class="toggle__track"><span class="toggle__thumb"></span></span>
+            <span class="veg-mark veg-mark--veg" aria-hidden="true"></span>
+            Veg only
+          </label>
+        </div>
+
+        <div class="menu__grid" data-menu></div>
+        <p class="menu__note">Prices include GST. Packaging is free for pickup orders. <!-- TODO: confirm --></p>
+      </div>
+    </section>
+
+    <!-- ───────── How it works ───────── -->
+    <section class="section how" id="how">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">How it works</p>
+          <h2>Three steps to a hot meal</h2>
+        </div>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num">1</span>
+            <h3>Choose your dishes</h3>
+            <p>Browse the menu and add what you like to your order. Mix and match freely.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">2</span>
+            <h3>Send it on WhatsApp</h3>
+            <p>Add your name and pickup time. We confirm your order on WhatsApp within minutes.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">3</span>
+            <h3>We cook, you collect</h3>
+            <p>Your food is cooked fresh and packed hot, ready when you arrive. Pay by UPI or cash.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ───────── Two ways ───────── -->
+    <section class="section ways" id="ways">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Two ways to get your food</p>
+          <h2>Pick it up, or let it come to you</h2>
+        </div>
+        <div class="ways__grid">
+          <article class="way way--pickup">
+            <div class="way__tag">Best value</div>
+            <h3>Self pickup</h3>
+            <p>Order here, skip the delivery fees and collect your food piping hot from our kitchen counter.</p>
+            <ul class="checks">
+              <li>No delivery or platform charges</li>
+              <li>Ready at the time you choose</li>
+              <li>Pay by UPI or cash at pickup</li>
+            </ul>
+            <a href="#menu" class="btn btn--primary">Start a pickup order</a>
+          </article>
+          <article class="way way--delivery">
+            <h3>Home delivery</h3>
+            <p>Order through your favourite app and track your food right to your door.</p>
+            <ul class="checks">
+              <li>Live tracking to your doorstep</li>
+              <li>App offers and coupons apply</li>
+              <li>Same kitchen, same care</li>
+            </ul>
+            <div class="way__apps">
+              <a href="#" class="app-btn app-btn--swiggy" data-link="swiggyUrl" target="_blank" rel="noopener">Order on Swiggy</a>
+              <a href="#" class="app-btn app-btn--zomato" data-link="zomatoUrl" target="_blank" rel="noopener">Order on Zomato</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────── Kitchen promise ───────── -->
+    <section class="section promise" id="promise">
+      <div class="container promise__inner">
+        <div class="promise__copy">
+          <p class="eyebrow eyebrow--light">Our kitchen promise</p>
+          <h2>You can't see our kitchen.<br>So here's exactly how it runs.</h2>
+          <p>A cloud kitchen has no dining room, so trust has to be earned in every box. These are the standards we hold ourselves to, every single day.</p>
+          <p class="promise__licence">FSSAI Lic. No. <span data-text="fssai">00000000000000</span></p>
+        </div>
+        <div class="promise__grid">
+          <div class="promise__item">
+            <h3>Cooked to order</h3>
+            <p>Nothing sits in a warmer. Your food is cooked after you place the order.</p>
+          </div>
+          <div class="promise__item">
+            <h3>Fresh every morning</h3>
+            <p>Vegetables, meat and dairy are bought daily from trusted local suppliers.</p>
+          </div>
+          <div class="promise__item">
+            <h3>Clean &amp; checked</h3>
+            <p>Gloves, hairnets and masks for all staff. Surfaces sanitised every shift, temperatures logged.</p>
+          </div>
+          <div class="promise__item">
+            <h3>Sealed for you</h3>
+            <p>Food-grade, leak-proof containers with a tamper seal, so it arrives exactly as it left us.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────── Reviews ───────── -->
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Reviews</p>
+          <h2>Loved by our neighbours</h2>
+          <!-- TODO: replace these sample reviews with real ones (with permission) from Swiggy, Google or WhatsApp -->
+        </div>
+        <div class="reviews__grid">
+          <figure class="review">
+            <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>“The biryani tastes exactly like home. Generous portions, and it was still hot when I got back to my flat.”</blockquote>
+            <figcaption><span class="avatar">PR</span><span><strong>Priya R.</strong><small>Ordered via pickup</small></span></figcaption>
+          </figure>
+          <figure class="review">
+            <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>“You can tell it's freshly made. Not oily at all, and the packaging is properly sealed. Our weekly Friday order now.”</blockquote>
+            <figcaption><span class="avatar">AK</span><span><strong>Arjun K.</strong><small>Ordered on Swiggy</small></span></figcaption>
+          </figure>
+          <figure class="review">
+            <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>“Ordering on WhatsApp was so easy. They confirmed in two minutes and the thali was ready right on time.”</blockquote>
+            <figcaption><span class="avatar">SM</span><span><strong>Sneha M.</strong><small>Ordered via pickup</small></span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────── About ───────── -->
+    <section class="section about" id="about">
+      <div class="container about__inner">
+        <div class="about__visual" aria-hidden="true">
+          <!-- TODO: swap for a real photo of you / your team in the kitchen: <img src="images/team.jpg" alt="..."> -->
+          <div class="about__photo">
+            <span>Add a photo of<br>your team here</span>
+          </div>
+        </div>
+        <div class="about__copy">
+          <p class="eyebrow">Our story</p>
+          <h2>Started at home. Still cooked like it.</h2>
+          <!-- TODO: tell your own story -->
+          <p>Saffron &amp; Sage began with family recipes and a simple idea: food from a delivery kitchen should taste as honest as food from a home kitchen.</p>
+          <p>We keep the menu small so every dish gets our full attention. The masalas are ground in-house, the dal simmers overnight, and nothing is cooked before you order.</p>
+          <p class="signature">— The Saffron &amp; Sage family</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────── FAQ ───────── -->
+    <section class="section faq" id="faq">
+      <div class="container faq__inner">
+        <div class="section__head section__head--left">
+          <p class="eyebrow">Good to know</p>
+          <h2>Questions, answered</h2>
+          <p class="section__sub">Anything else? Message us on WhatsApp and a real person will reply.</p>
+        </div>
+        <div class="faq__list">
+          <details>
+            <summary>How do I pay for a pickup order?</summary>
+            <p>Pay by UPI or cash when you collect your food. For large orders we may ask for an advance on WhatsApp.</p>
+          </details>
+          <details>
+            <summary>How long does a pickup order take?</summary>
+            <p>Most orders are ready in about <span data-text="prepMinutes">30</span> minutes. You can choose a later pickup time when you place your order.</p>
+          </details>
+          <details>
+            <summary>Do you deliver?</summary>
+            <p>Yes, through Swiggy and Zomato. Use the buttons on this page to open our restaurant page in the app.</p>
+          </details>
+          <details>
+            <summary>Can you make it less spicy, or Jain?</summary>
+            <p>Most dishes can be made mild, and many can be prepared without onion and garlic. Add a note to your order and we'll confirm on WhatsApp.</p>
+          </details>
+          <details>
+            <summary>Do you take bulk or party orders?</summary>
+            <p>Yes. Message us at least a day in advance with the number of guests and we'll suggest a menu.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────── Contact ───────── -->
+    <section class="section contact" id="contact">
+      <div class="container contact__inner">
+        <div class="contact__card">
+          <p class="eyebrow">Visit &amp; pickup</p>
+          <h2>Find our kitchen</h2>
+          <address>
+            <span data-text="address">12 Example Street, Your Area, Your City 560001</span>
+          </address>
+          <div class="contact__links">
+            <a class="btn btn--primary" data-link="mapsUrl" href="#" target="_blank" rel="noopener">Get directions</a>
+            <a class="btn btn--ghost" data-whatsapp href="#" target="_blank" rel="noopener">WhatsApp us</a>
+          </div>
+          <ul class="contact__list">
+            <li><span>Phone</span><a data-tel href="#"><span data-text="phone">+91 90000 00000</span></a></li>
+            <li data-email-row><span>Email</span><a data-mailto href="#"><span data-text="email">hello@example.com</span></a></li>
+          </ul>
+        </div>
+        <div class="hours">
+          <h3>Opening hours</h3>
+          <table class="hours__table" data-hours></table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────── Final CTA ───────── -->
+    <section class="cta">
+      <div class="container cta__inner">
+        <h2>Hungry? Your next meal is three taps away.</h2>
+        <div class="cta__actions">
+          <a href="#menu" class="btn btn--light btn--lg">Browse the menu</a>
+          <a href="#" class="btn btn--outline-light btn--lg" data-link="swiggyUrl" target="_blank" rel="noopener">Order on Swiggy</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ───────── Footer ───────── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <p class="brand__name brand__name--footer">Saffron <em>&amp;</em> Sage</p>
+        <p class="footer__tag">Freshly cooked, honestly made.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#menu">Menu</a>
+        <a href="#how">How it works</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="#" data-link="instagram" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+      <p class="footer__legal">© <span data-year></span> Saffron &amp; Sage · FSSAI Lic. No. <span data-text="fssai">00000000000000</span></p>
+    </div>
+  </footer>
+
+  <!-- ───────── Mobile order bar ───────── -->
+  <button class="order-bar" data-open-basket data-order-bar hidden>
+    <span><strong data-count>0</strong> items · <strong data-total>₹0</strong></span>
+    <span>View order →</span>
+  </button>
+
+  <!-- ───────── Basket drawer ───────── -->
+  <div class="drawer" data-drawer aria-hidden="true">
+    <div class="drawer__scrim" data-close-basket></div>
+    <aside class="drawer__panel" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+      <header class="drawer__head">
+        <h2 id="drawer-title">Your order</h2>
+        <button class="icon-btn" data-close-basket aria-label="Close">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </header>
+
+      <div class="drawer__body">
+        <div class="empty" data-empty>
+          <div class="empty__icon" aria-hidden="true">🍽️</div>
+          <p>Your order is empty.</p>
+          <button class="btn btn--ghost btn--sm" data-close-basket>Browse the menu</button>
+        </div>
+
+        <ul class="lines" data-lines></ul>
+
+        <form class="checkout" data-checkout novalidate>
+          <h3>Pickup details</h3>
+          <label>Your name
+            <input name="name" autocomplete="name" required placeholder="e.g. Priya">
+          </label>
+          <label>Phone number
+            <input name="phone" type="tel" autocomplete="tel" required placeholder="10-digit mobile" pattern="[0-9+ ]{10,15}">
+          </label>
+          <label>Pickup time
+            <select name="time" data-times required></select>
+          </label>
+          <label>Notes for the kitchen <small>(optional)</small>
+            <textarea name="notes" rows="2" placeholder="Less spicy, no onion, extra raita…"></textarea>
+          </label>
+          <p class="form-error" data-error hidden></p>
+        </form>
+      </div>
+
+      <footer class="drawer__foot" data-foot>
+        <div class="totals">
+          <span>Total</span>
+          <strong data-total>₹0</strong>
+        </div>
+        <button class="btn btn--whatsapp btn--block btn--lg" data-send>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.7 11.7 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.2-.2-.5-.3z"/></svg>
+          Send order on WhatsApp
+        </button>
+        <p class="drawer__fine">We'll confirm availability and your pickup time on WhatsApp. Pay at pickup.</p>
+      </footer>
+    </aside>
+  </div>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
